@@ -8,7 +8,6 @@ BEM related reverse dependencies resolver
 
 - [Install](#install)
 - [Usage](#usage)
-- [API](#api)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -35,7 +34,7 @@ m-head-action
 ```
 
 ```js
-const gatherDeps = require('./index.js');
+const gatherDeps = require('gather-reverse-deps');
 
 gatherDeps.invoke({}, {
     entities: 'button',
