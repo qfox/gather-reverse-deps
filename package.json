@@ -26,7 +26,8 @@
   },
   "files": [
     "bin",
-    "index.js"
+    "index.js",
+    "bem-graph.js"
   ],
   "dependencies": {
     "@bem/deps": "0.2.2",
