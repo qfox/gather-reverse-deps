@@ -4,7 +4,7 @@
   "description": "Reverse deps fetcher",
   "main": "index.js",
   "bin": {
-    "gather-reverse-deps": "./index.js"
+    "gather-reverse-deps": "./bin/coa.js"
   },
   "scripts": {
     "lint": "eslint .",

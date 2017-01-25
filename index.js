@@ -5,7 +5,7 @@ const Graph = require('./bem-graph');
 const bemNaming = require('bem-naming');
 const pkg = require('./package.json');
 
-const CLI = module === process.mainModule;
+const CLI = global.CLI;
 
 const buildGraph = deps => {
     const graph = new Graph();
@@ -61,5 +61,3 @@ const P = module.exports = COA.Cmd()
                 throw e;
             });
     });
-
-CLI && P.run(process.argv.slice(2));
