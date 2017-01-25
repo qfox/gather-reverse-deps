@@ -25,6 +25,7 @@
     "eslint-config-pedant": "^0.8.0"
   },
   "files": [
+    "bin",
     "index.js"
   ],
   "dependencies": {
