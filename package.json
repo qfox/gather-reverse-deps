@@ -1,0 +1,38 @@
+{
+  "name": "gather-reverse-deps",
+  "version": "0.0.1",
+  "description": "Reverse deps fetcher",
+  "main": "index.js",
+  "bin": {
+    "gather-reverse-deps": "./index.js"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint",
+    "prepublish": "npm run build",
+    "build": "browserify -s gatherReverseDeps src/index.js -o index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxqfox/gather-reverse-deps.git"
+  },
+  "author": "Alexey Yaroshevich <zxqfox@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zxqfox/gather-reverse-deps/issues"
+  },
+  "homepage": "https://github.com/zxqfox/gather-reverse-deps#readme",
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-pedant": "^0.8.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@bem/deps": "0.2.2",
+    "bem-naming": "^1.0.1",
+    "chalk": "^1.1.3",
+    "coa": "^1.0.1"
+  }
+}
