@@ -1,6 +1,6 @@
 {
   "name": "gather-reverse-deps",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Reverse deps fetcher",
   "main": "index.js",
   "bin": {
