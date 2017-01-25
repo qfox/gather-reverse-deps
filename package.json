@@ -8,9 +8,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "npm run lint",
-    "prepublish": "npm run build",
-    "build": "browserify -s gatherReverseDeps src/index.js -o index.js"
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
