@@ -5713,7 +5713,7 @@ module.exports = function hashSet(hashFn) {
          */
         forEach(callbackFn, thisArg) {
             this._map.forEach(function(value) {
-                callbackFn(value, value, this);
+                callbackFn.call(thisArg, value, value, this);
             }, thisArg);
         }
         /**
