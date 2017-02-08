@@ -5704,7 +5704,7 @@ module.exports = function hashSet(hashFn) {
          *
          * Callback is invoked with three arguments:
          *   * the element value
-         *   * the element value
+         *   * the element key
          *   * the Set object being traversed
          *
          * @param {function} callbackFn — function to execute for each element.
@@ -5712,9 +5712,7 @@ module.exports = function hashSet(hashFn) {
          *                           to forEach, it will be used as the this value for each callback.
          */
         forEach(callbackFn, thisArg) {
-            this._map.forEach(function(value) {
-                callbackFn.call(thisArg, value, value, this);
-            }, thisArg);
+            this._map.forEach((value, key) => callbackFn.call(thisArg, value, key, this));
         }
         /**
          * Returns a new Iterator object that contains the values for each element in the Set object in insertion order.
